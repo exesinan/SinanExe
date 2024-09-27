@@ -5,82 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sinan Karaboğa'nın kişisel web sitesi. Yazılım ve web geliştirme projeleri.">
     <title>Sinan Karaboğa | Web Geliştirici</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Navbar -->
+    <nav id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">Sinan Karaboğa</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Hakkımda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projelerim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">İletişim</a></li>
-                </ul>
-            </div>
+            <h1 class="logo"><a href="#">Sinan Karaboğa</a></h1>
+            <ul>
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#projects">Projelerim</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
         </div>
     </nav>
 
-    <header class="hero bg-primary text-white text-center py-5">
+    <!-- Hero Section -->
+    <section id="hero">
         <div class="container">
-            <h1 class="display-4">Sinan Karaboğa</h1>
-            <p class="lead">Öğrenci | Web Geliştirici</p>
-            <a href="#projects" class="btn btn-outline-light btn-lg mt-3">Projelerimi Gör</a>
-        </div>
-    </header>
-
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center">Hakkımda</h2>
-            <p class="lead text-center">22 yaşındayım ve bilgisayar operatörlüğü öğrencisiyim. Daha önce farklı üniversitelerde farklı bölümler okudum, ancak ilgimi çeken alan bilgisayar bilimleri oldu. Şu anda profesyonel web tasarımı ve yazılım geliştirme üzerine kendimi geliştirmek için çalışıyorum.</p>
+            <h1>Merhaba, Ben Sinan Karaboğa</h1>
+            <p>Yazılım Geliştirici ve Web Tasarımcısı</p>
+            <a href="#projects" class="btn">Projelerimi Gör</a>
         </div>
     </section>
 
-    <section id="projects" class="bg-light py-5">
+    <!-- About Section -->
+    <section id="about">
         <div class="container">
-            <h2 class="text-center">Projelerim</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Profesyonel Web Tasarımı</h5>
-                            <p class="card-text">Modern, kullanıcı dostu ve mobil uyumlu web siteleri tasarlamak üzerine odaklandığım projeler.</p>
-                        </div>
-                    </div>
+            <div class="about-content">
+                <h2>Hakkımda</h2>
+                <p>Ben Sinan Karaboğa, 22 yaşındayım. Bilgisayar operatörlüğü bölümü öğrencisiyim ve yazılım dünyasına büyük bir ilgi duyuyorum. Daha önce başka bölümlerde eğitim aldım, fakat bilgisayar ve teknoloji dünyasında kendimi geliştirmek istiyorum. Özellikle web tasarımı ve şans oyunları üzerine projeler geliştiriyorum.</p>
+            </div>
+            <img src="https://source.unsplash.com/400x400/?developer" alt="Sinan Karaboğa">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projelerim</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Web Tasarım Projesi</h3>
+                    <p>Modern ve kullanıcı dostu web tasarımı üzerine çalışmalar. Mobil uyumlu, dinamik ve hızlı siteler geliştiriyorum.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Şans Oyunları ile İlgili Projeler</h5>
-                            <p class="card-text">Şans oyunları üzerine projeler geliştiriyorum. Veri analizi ve istatistik kullanarak başarılı algoritmalar üzerinde çalışıyorum.</p>
-                        </div>
-                    </div>
+                <div class="project-card">
+                    <h3>Şans Oyunları Projesi</h3>
+                    <p>Şans oyunları ve veri analizi üzerine projeler geliştiriyorum. İstatistiksel analizlerle algoritmalar oluşturuyorum.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-5">
+    <!-- Contact Section -->
+    <section id="contact">
         <div class="container">
-            <h2 class="text-center">İletişim</h2>
-            <p class="text-center">Bana ulaşmak için: <a href="mailto:sinankaraboga@outlook.com.tr">sinankaraboga@outlook.com.tr</a></p>
-            <div class="social-icons text-center">
-                <a href="https://github.com/sinankaraboga" target="_blank" class="mr-3"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://linkedin.com/in/sinankaraboga" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-            </div>
+            <h2>İletişim</h2>
+            <p>Bana ulaşmak için: <a href="mailto:sinankaraboga@outlook.com.tr">sinankaraboga@outlook.com.tr</a></p>
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3">
+    <!-- Footer -->
+    <footer>
         <p>&copy; 2024 Sinan Karaboğa. Tüm hakları saklıdır.</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
